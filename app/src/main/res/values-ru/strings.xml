@@ -15,4 +15,10 @@
     <string name="helper_fname">Введите ваше имя</string>
     <string name="helper_lname">Введите ваше фамилию</string>
     <string name="return_sign">Вернуться на регистрацию</string>
+    <string name="title">Заголовок</string>
+    <string name="msg">Сообщение</string>
+    <string name="addNote">Добавить сообщение</string>
+    <string name="aDd">Добавить</string>
+    <string name="allNotes">Все сообщения</string>
+    <string name="toast_msg_add">Сообщение добавлено</string>
 </resources>
