@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">HomeWorkRoman</string>
+    <string name="logo">Spiice</string>
+    <string name="discover_platform">Discover the platform</string>
+    <string name="have_account">You have an account ? Log-in</string>
+    <string name="skip">Skip</string>
+    <string name="find_world">Find projects from companies
+                      \n everywhere in the world</string>
+    <string name="sign">Sign-up</string>
+    <string name="Log">Log-in</string>
+    <string name="lname">Last Name</string>
+    <string name="fname">First Name</string>
+    <string name="helper_fname">Enter your Firstname</string>
+    <string name="helper_lname">Enter your Lastname</string>
+    <string name="pass">Password</string>
+    <string name="email">Email</string>
+    <string name="return_sign">Return to Sing-Up</string>
+
+</resources>

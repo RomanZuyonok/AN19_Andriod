@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HomeWorkRoman</string>
+    <string name="logo">Spiice</string>
+    <string name="discover_platform">Откройте для себя платформу</string>
+    <string name="have_account">У вас есть аккаунт? Войти</string>
+    <string name="skip">Пропускать</string>
+    <string name="find_world">Найдите проекты от компаний во всем мире</string>
+    <string name="sign">Зарегистрироваться</string>
+    <string name="Log">Авторизоваться</string>
+    <string name="lname">Фамилия</string>
+    <string name="fname">Имя</string>
+    <string name="pass">Пароль</string>
+    <string name="email">Адрес  Эпочта</string>
+    <string name="helper_fname">Введите ваше имя</string>
+    <string name="helper_lname">Введите ваше фамилию</string>
+    <string name="return_sign">Вернуться на регистрацию</string>
+</resources>
