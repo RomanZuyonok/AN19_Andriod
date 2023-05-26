@@ -7,123 +7,129 @@
     android:background="@drawable/bubbles"
     tools:context=".SignActivity">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="4dp"
-        android:background="@drawable/blur_background_sign"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:paddingLeft="2dp"
-        android:paddingRight="2dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:paddingLeft="2dp"
+       android:paddingRight="2dp"
+       android:orientation="vertical"
+       android:gravity="center"
+       android:layout_marginStart="4dp"
+       android:layout_marginEnd="4dp"
+       android:background="@drawable/blur_background_sign"
+       android:layout_marginTop="70dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            style="@style/TextStyle.H3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="20dp"
-            android:text="@string/sign" />
+      <TextView
+          android:text="@string/sign"
+          style="@style/TextStyle.H3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:layout_margin="20dp"
+          />
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/textFieldFirstName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:counterEnabled="true"
+          app:counterMaxLength="25"
+          app:helperTextEnabled="true"
+          app:helperText="@string/helper_fname"
+          android:layout_margin="5dp"
+          android:hint="@string/fname"
+          >
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textFieldFirstName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:hint="@string/fname"
-            app:counterEnabled="true"
-            app:counterMaxLength="25"
-            app:helperText="@string/helper_fname"
-            app:helperTextEnabled="true">
+         <com.google.android.material.textfield.TextInputEditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:minWidth="300dp"
+             />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:minWidth="300dp" />
+      </com.google.android.material.textfield.TextInputLayout>
 
-        </com.google.android.material.textfield.TextInputLayout>
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/tFieldLastName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:counterEnabled="true"
+          app:counterMaxLength="25"
+          app:helperTextEnabled="true"
+          app:helperText="@string/helper_lname"
+          android:layout_margin="5dp"
+          android:hint="@string/lname">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/tFieldLastName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:hint="@string/lname"
-            app:counterEnabled="true"
-            app:counterMaxLength="25"
-            app:helperText="@string/helper_lname"
-            app:helperTextEnabled="true">
+         <com.google.android.material.textfield.TextInputEditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:minWidth="300dp"
+             />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:minWidth="300dp" />
+      </com.google.android.material.textfield.TextInputLayout>
 
-        </com.google.android.material.textfield.TextInputLayout>
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/tFieldEmail"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="5dp"
+          app:counterEnabled="true"
+          app:errorEnabled="true"
+          app:counterMaxLength="25"
+          android:hint="@string/email">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/tFieldEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:hint="@string/email"
-            app:counterEnabled="true"
-            app:counterMaxLength="25"
-            app:errorEnabled="true">
+         <com.google.android.material.textfield.TextInputEditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:minWidth="300dp"
+             />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:minWidth="300dp" />
+      </com.google.android.material.textfield.TextInputLayout>
 
-        </com.google.android.material.textfield.TextInputLayout>
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/tFieldPass"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="5dp"
+          app:counterEnabled="true"
+          app:counterMaxLength="25"
+          app:errorEnabled="true"
+          android:hint="@string/pass">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/tFieldPass"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:hint="@string/pass"
-            app:counterEnabled="true"
-            app:counterMaxLength="25"
-            app:errorEnabled="true">
+         <com.google.android.material.textfield.TextInputEditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:minWidth="300dp"
+             />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:minWidth="300dp" />
+      </com.google.android.material.textfield.TextInputLayout>
 
-        </com.google.android.material.textfield.TextInputLayout>
+   </LinearLayout>
 
-    </LinearLayout>
+   <Button
+       android:id="@+id/button_sign_up"
+       android:text="@string/sign"
+       style="@style/ButtonStyle"
+       android:textAllCaps="false"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintBottom_toTopOf="@id/sign_text_view2"
+       />
 
-    <Button
-        android:id="@+id/button_sign_up"
-        style="@style/ButtonStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/shape_button"
-        android:paddingStart="80dp"
-        android:paddingEnd="80dp"
-        android:text="@string/sign"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toTopOf="@id/sign_text_view2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/sign_text_view2"
-        style="@style/TextStyle.P"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
-        android:text="@string/have_account"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+   <TextView
+       android:id="@+id/sign_text_view2"
+       android:text="@string/have_account"
+       android:clickable="true"
+       android:onClick="onLogIn"
+       style="@style/TextStyle.P"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="100dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,40 +10,42 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="4dp"
-        android:background="@drawable/blur_background_log"
-        android:gravity="center"
-        android:orientation="vertical"
         android:paddingLeft="2dp"
         android:paddingRight="2dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/blur_background_log"
+        android:layout_marginTop="70dp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
+            android:text="@string/Log"
             style="@style/TextStyle.H3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_margin="20dp"
-            android:text="@string/Log" />
+            />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/tFieldEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="6dp"
-            android:hint="@string/email"
             app:counterEnabled="true"
+            app:errorEnabled="true"
             app:counterMaxLength="25"
-            app:errorEnabled="true">
+            android:hint="@string/email">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minWidth="300dp" />
+                android:minWidth="300dp"
+                />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -52,15 +54,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="6dp"
-            android:hint="@string/pass"
             app:counterEnabled="true"
-            app:counterMaxLength="26"
-            app:errorEnabled="true">
+            app:counterMaxLength="25"
+            app:errorEnabled="true"
+            android:hint="@string/pass">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minWidth="300dp" />
+                android:minWidth="300dp"
+                />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -68,26 +71,27 @@
 
     <Button
         android:id="@+id/button_log_in"
+        android:text="@string/Log"
         style="@style/ButtonStyle"
+        android:textAllCaps="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/shape_button"
-        android:paddingStart="60dp"
-        android:paddingEnd="60dp"
-        android:text="@string/Log"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toTopOf="@id/log_text_view2"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@id/log_text_view2"
+        />
 
     <TextView
         android:id="@+id/log_text_view2"
+        android:text="@string/return_sign"
         style="@style/TextStyle.P"
+        android:clickable="true"
+        android:onClick="onSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
-        android:text="@string/return_sign"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

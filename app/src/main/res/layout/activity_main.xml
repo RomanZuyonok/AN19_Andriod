@@ -23,7 +23,6 @@
        android:id="@+id/discover_platform"
        android:text="@string/discover_platform"
        style="@style/ButtonStyle"
-       android:background="@drawable/shape_button"
        android:onClick="onPlatform"
        android:textAllCaps="false"
        android:layout_width="wrap_content"
